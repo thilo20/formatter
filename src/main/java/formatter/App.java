@@ -22,16 +22,21 @@ public class App {
 		}
 
 		File file = new File(args[0]);
-		File outFile = new File(args[0] + ".out");
+		File outFile = new File("formatted.java");
+		File outFile2 = new File("formattedWithImports.java");
 
 		try {
 			String content = new String(Files.readAllBytes(file.toPath()), Charset.forName("UTF-8"));
 
 			// apply formatter
 			String formattedSource = new Formatter().formatSource(content);
-
 			byte[] strToBytes = formattedSource.getBytes();
 			Files.write(outFile.toPath(), strToBytes);
+
+			// apply formatter with "fix imports" 
+			formattedSource = new Formatter().formatSourceAndFixImports(content);
+			strToBytes = formattedSource.getBytes();
+			Files.write(outFile2.toPath(), strToBytes);
 
 		} catch (IOException e) {
 			e.printStackTrace();
