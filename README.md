@@ -8,8 +8,25 @@ Usage:
 - diff files for changes
 
 Recommend reading: 
-https://github.com/google/google-java-format
+- "the guide" https://google.github.io/styleguide/javaguide.html 
+- "the tool" https://github.com/google/google-java-format
 
 IntelliJ plugin issues:
-https://github.com/google/google-java-format#intellij
-https://plugins.jetbrains.com/plugin/8527-google-java-format
+- https://github.com/google/google-java-format#intellij
+- https://plugins.jetbrains.com/plugin/8527-google-java-format
+
+
+# results
+
+## formatted.java
+converts tabs2spaces compared to sourcefile.java
+
+## formattedWithImports.java
+matches javadoc:
+Formats an input string (a Java compilation unit) and fixes imports. 
+Fixing imports includes ordering, spacing, and removal of unused import statements.
+
+Diff result: strict alphabetical imports look weird, no spacing.
+
+Official ruleset:
+https://google.github.io/styleguide/javaguide.html#s3.3-import-statements
