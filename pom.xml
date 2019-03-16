@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.thilo20</groupId>
 	<artifactId>formatter</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>applies google-java-format to source file</name>
 	<description>uses google-java-format as lib</description>
 
@@ -11,7 +11,7 @@
 		<dependency>
 			<groupId>com.google.googlejavaformat</groupId>
 			<artifactId>google-java-format</artifactId>
-			<version>1.6</version>
+			<version>1.7</version>
 		</dependency>
 	</dependencies>
 </project>
