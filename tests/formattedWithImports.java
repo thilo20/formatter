@@ -2,11 +2,16 @@ package formatter;
 
 import com.google.googlejavaformat.java.Formatter;
 import com.google.googlejavaformat.java.FormatterException;
+import java.io.*; // wildcard
 import java.io.File;
-import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
+// unused
 
+/**
+ * This is sample java source code used for testing the google-java-format tool. It is not formatted
+ * consistently - on purpose. Diff with output file.
+ */
 public class App {
 
   /**
@@ -27,6 +32,8 @@ public class App {
       byte[] strToBytes = formattedSource.getBytes();
 
       Files.write(outFile.toPath(), strToBytes);
+
+      System.out.println("done. " + System.getProperty("user.dir"));
 
     } catch (IOException e) {
       e.printStackTrace();

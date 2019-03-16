@@ -38,6 +38,7 @@ public class App {
 			strToBytes = formattedSource.getBytes();
 			Files.write(outFile2.toPath(), strToBytes);
 
+			System.out.println("done. " + System.getProperty("user.dir"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (FormatterException e) {
