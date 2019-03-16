@@ -4,6 +4,7 @@ It uses the formatter as a library.
 
 Usage:
 - run App <sourcefile>
+	- configure working dir as: ${workspace_loc:formatter}/tests
 - creates formatted output file
 - diff files for changes
 
@@ -17,6 +18,8 @@ IntelliJ plugin issues:
 
 
 # results
+
+See subdir tests/ for sample input and generated files.
 
 ## formatted.java
 converts tabs2spaces compared to sourcefile.java
